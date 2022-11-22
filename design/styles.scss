@@ -1,6 +1,3 @@
-/*font-family: 'Fraunces', serif;
-font-family: 'Montserrat', sans-serif;*/
-
 $primary-color: hsl(158, 36%, 37%);
 $background-color: hsl(30, 38%, 92%);
 
@@ -35,7 +32,7 @@ img {
 
 .card {
   background-color: $neutral-color;
-  width: min(90%, 24rem);
+  width: min(90%, 23rem);
   border-radius: 10px;
   font-family: "Montserrat", sans-serif;
   overflow: hidden;
@@ -48,6 +45,8 @@ img {
   .product--type {
     text-transform: uppercase;
     color: $base-color;
+    margin-top: 1.5rem;
+    font-size: 0.75rem;
   }
 
   .product--name {
@@ -79,10 +78,14 @@ img {
   .product--cart-btn {
     background-color: $primary-color;
     border-radius: 10px;
-    padding: 1em 5.8em;
     font-weight: 700;
     font-size: 1rem;
     margin-bottom: 1.5rem;
+    margin-inline: auto;
+    padding: 1em 0;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
 
     .cart-icon {
       width: 15px;
@@ -92,6 +95,31 @@ img {
     a {
       color: $neutral-color;
       text-decoration: none;
+    }
+  }
+
+  .product--cart-btn:hover {
+    background-color: darken($primary-color, 15%);
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .card {
+    width: 40rem;
+    max-width: 90%;
+    display: flex;
+
+    > * {
+      flex-basis: 50%;
+    }
+
+    .container {
+      width: 80%;
+      margin-inline: auto;
+    }
+    .product--cart-btn {
+      margin-top: 1rem;
+      margin-bottom: 0;
     }
   }
 }
