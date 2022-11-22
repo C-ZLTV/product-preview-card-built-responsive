@@ -1,0 +1,97 @@
+/*font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;*/
+
+$primary-color: hsl(158, 36%, 37%);
+$background-color: hsl(30, 38%, 92%);
+
+$secondary-color: hsl(212, 21%, 14%);
+$base-color: hsl(228, 12%, 48%);
+$neutral-color: hsl(0, 0%, 100%);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.bg {
+  background-color: $background-color;
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: $neutral-color;
+  width: min(90%, 24rem);
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+
+  .container {
+    width: 90%;
+    margin-inline: auto;
+  }
+
+  .product--type {
+    text-transform: uppercase;
+    color: $base-color;
+  }
+
+  .product--name {
+    font-family: "Fraunces", serif;
+    color: $secondary-color;
+  }
+  .product--description {
+    color: $base-color;
+  }
+
+  .product--price {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .product--discount-price {
+    font-family: "Fraunces", serif;
+    color: $primary-color;
+    font-size: 2.2rem;
+    margin: 1rem 0;
+  }
+
+  .product--original-price {
+    color: $base-color;
+    text-decoration: line-through;
+  }
+
+  .product--cart-btn {
+    background-color: $primary-color;
+    border-radius: 10px;
+    padding: 1em 5.8em;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+
+    .cart-icon {
+      width: 15px;
+      display: inline;
+    }
+
+    a {
+      color: $neutral-color;
+      text-decoration: none;
+    }
+  }
+}
