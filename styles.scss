@@ -11,6 +11,8 @@ $neutral-color: hsl(0, 0%, 100%);
 
 body {
   margin: 0;
+  background-color: $background-color;
+  font-family: "Montserrat", sans-serif;
 }
 
 img {
@@ -18,24 +20,18 @@ img {
   display: block;
 }
 
-.bg {
-  background-color: $background-color;
-  height: 100vh;
-}
-
-.flex {
+.main {
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .card {
-  background-color: $neutral-color;
   width: min(90%, 23rem);
   border-radius: 10px;
-  font-family: "Montserrat", sans-serif;
   overflow: hidden;
+  background-color: $neutral-color;
 
   .container {
     width: 90%;
@@ -80,11 +76,11 @@ img {
     border-radius: 10px;
     font-weight: 700;
     font-size: 1rem;
+    text-align: center;
     margin-bottom: 1.5rem;
     margin-inline: auto;
     padding: 1em 0;
     width: 100%;
-    text-align: center;
     cursor: pointer;
 
     .cart-icon {
@@ -100,6 +96,20 @@ img {
 
   .product--cart-btn:hover {
     background-color: darken($primary-color, 15%);
+  }
+}
+
+.attribution {
+  text-align: center;
+  color: $base-color;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+
+  a {
+    text-decoration: none;
+    color: $secondary-color;
+    padding: 0;
+    margin: 0;
   }
 }
 
