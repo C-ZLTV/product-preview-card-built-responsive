@@ -60,6 +60,7 @@ img {
 }
 .card .product--cart-btn {
   background-color: hsl(158deg, 36%, 37%);
+  border: none;
   border-radius: 10px;
   font-weight: 700;
   font-size: 1rem;
