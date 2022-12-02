@@ -11,10 +11,7 @@ This is my solution to the [Product preview card component challenge on Frontend
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -34,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My Solution](https://www.frontendmentor.io/solutions/responsive-product-preview-card-cjYeueNf0c)
+- Solution URL: [My Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-product-preview-card-cjYeueNf0c)
 - Live Site URL: [Live Website](https://c-zltv.github.io/product-preview-card-built-responsive)
 
 ## My process
